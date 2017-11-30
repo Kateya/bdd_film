@@ -7,9 +7,7 @@
 		
 		<?php foreach ($films as $key => $film): ?>
 			
-			<div class="film<?=$key+1?>">
-				
-				<h2>Film n°<?=$key+1?></h2>
+			<div class="film>">
 				<h3><?=$film['Titre']?></h3>
 
 			</div>
