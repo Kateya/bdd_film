@@ -1,13 +1,11 @@
+<section id=fiche class="container">
 <?php
 foreach ($films as $film) {
 	if  ($film["id"] == $idFilm) {
 		$id_Real = $film["id_Realisateurs"];
-
 		echo $film["Titre"];
-
     	$realisateurs_list = $bdd->query('SELECT * FROM realisateurs');
 		$realisateurs = $realisateurs_list->fetchAll();
-
 		foreach ($realisateurs as $realisateur) {
 			
 			if ($realisateur["id"] == $id_Real) { 
@@ -25,8 +23,6 @@ foreach ($films as $film) {
 		}
 	}
 }     
-
-
 foreach ($genres as $genre) :
 	if ($genre["id_Films"] == $idFilm) : ?>
 
@@ -37,7 +33,6 @@ foreach ($genres as $genre) :
        
 <?php endif;
 endforeach;
-
 foreach ($acteurs as $acteur) :
 	if ($acteur["id_Films"] == $idFilm) : ?>
 
@@ -52,3 +47,4 @@ foreach ($acteurs as $acteur) :
 <?php endif;
 endforeach;
 ?>
+</section>

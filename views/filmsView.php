@@ -4,7 +4,7 @@
 		<title>Vue des films</title>
 	</head>
 	<body>
-		
+		<section id="liste" class="container">
 		<?php foreach ($films as $key => $film): ?>
 			
 			<div class="film>">
@@ -12,6 +12,8 @@
 			</div>
 
 		<?php endforeach ?>
+		</section>
+		
 
 
 	</body>
