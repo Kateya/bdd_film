@@ -1,7 +1,26 @@
+body {
+    background-color: #e4e4e4;
+    color: #460492;
+}
 #liste, #fiche {
 margin-top : 150px;
 }
 
 #liste a {
     color: grey;
+    text-decoration: none;
+}
+
+
+
+#liste a:hover {
+    color: #460492;
+}
+
+.bg-dark {
+    background-color: #460492 !important;
+}
+
+h3 {
+    font-size: 20px;
 }

@@ -10,7 +10,7 @@ $url = "http://localhost/bdd_film/";
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="stylesheet" href="<?=$url?>style.css">
+    
 
     <title>Films</title>
 
@@ -19,6 +19,8 @@ $url = "http://localhost/bdd_film/";
 
     <!-- Custom styles for this template -->
     <link href="<?=$url?>css/shop-homepage.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="<?=$url?>style.css">
 
   </head>
 	<body>
