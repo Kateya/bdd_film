@@ -7,7 +7,7 @@ try {
     die();
 }
 
-$idFilm = 2;
+$idFilm = $_GET['idFilm'];
 $films_list = $bdd->query('SELECT * FROM films');
 $films = $films_list->fetchAll();
 
@@ -17,6 +17,6 @@ $acteurs = $acteurs_list->fetchAll();
 $genres_list = $bdd->query('SELECT * FROM genre JOIN genre_film ON genre.id = genre_film.id');
 $genres = $genres_list->fetchAll();
 
-include ('filmView.php'); 
+include ('views/filmView.php'); 
 
 ?>
