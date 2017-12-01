@@ -7,7 +7,7 @@ try {
     die();
 }
 
-$idFilm = $_GET['idFilm'];
+//$idFilm = $_GET['idFilm'];
 $films_list = $bdd->query('SELECT * FROM films');
 $films = $films_list->fetchAll();
 

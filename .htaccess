@@ -1,5 +1,11 @@
 RewriteEngine on
 RewriteBase /
+
+RewriteCond %{REQUEST_URI} film/
+RewriteRule ^([^/]+)/([^/]+)$  /bdd_film/index.php?route=$1&idFilm=$2
+
+
 RewriteCond  %{REQUEST_FILENAME} !-f
 RewriteCond  %{REQUEST_FILENAME} !-d
 RewriteRule  ^(.*)$ /bdd_film/index.php?route=$1 [NC,L,QSA]
+
